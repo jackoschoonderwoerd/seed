@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 1.2px;
+  /* font-family: Roboto, "Helvetica Neue", sans-serif; */
+  font-weight: 400;
+}
+ 
+
+html, body { height: 100%; }
+body {
+    margin: 0; 
+    height: 100% }
+
+a {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+:root {
+  
+  --text-color-orange: #b3eafa;
+  --header-blue: #001021;
+  --footer-light-brown: #996940;
+  --exhibition-background: #ccc
+}

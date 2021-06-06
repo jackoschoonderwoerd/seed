@@ -1,0 +1,80 @@
+<mat-nav-list>
+  <a
+    class="nav-list-item"
+    mat-list-item
+    routerLink="/home"
+    (click)="onCloseSidenav()">
+    HOME
+  </a>
+  <div class="hr-container">
+    <hr class="hr">
+  </div>
+
+  <a
+    class="nav-list-item"
+    mat-list-item
+    routerLink="/drinks"
+    (click)="onCloseSidenav()">
+    <span *ngIf="language ==='dutch'">DRANKEN</span>
+    <span *ngIf="language === 'english'">DRINKS</span>
+  </a>
+    <div class="hr-container">
+    <hr class="hr">
+  </div>
+
+  <a
+    class="nav-list-item"
+    mat-list-item
+    routerLink="/lunch"
+    (click)="onCloseSidenav()">
+    LUNCH&nbsp;&nbsp;11:00 - 17:00
+  </a>
+    <div class="hr-container">
+    <hr class="hr">
+  </div>
+
+  <a
+    class="nav-list-item"
+    mat-list-item
+    routerLink="/dinner"
+    (click)="onCloseSidenav()">
+    <span *ngIf="language ==='dutch'">DINER&nbsp;&nbsp;17:30 - 21:30</span>
+    <span *ngIf="language === 'english'">DINNER&nbsp;&nbsp;17:30 - 21:30</span>
+  </a>
+  <div class="hr-container">
+    <hr class="hr">
+  </div>
+
+  <a
+    class="nav-list-item"
+    mat-list-item
+    routerLink="/snacks"
+    (click)="onCloseSidenav()">
+    <span>SNACKS&nbsp;&nbsp;12:00 - 19:30</span>
+    
+  </a>
+    <div class="hr-container">
+    <hr class="hr">
+  </div>
+
+  <a
+    class="nav-list-item"
+    mat-list-item
+    routerLink="/beers"
+    (click)="onCloseSidenav()">
+    <span *ngIf="language ==='dutch'">BIEREN</span>
+    <span *ngIf="language === 'english'">BEERS</span>
+  </a>
+    <div class="hr-container">
+    <hr class="hr">
+  </div>
+  <a
+    class="nav-list-item"
+    mat-list-item
+    routerLink="/exhibitions"
+    (click)="onCloseSidenav()">
+    <span *ngIf="language ==='dutch'">EXPOSITIES</span>
+    <span *ngIf="language === 'english'">EXHIBITIONS</span>
+  </a>
+
+</mat-nav-list>

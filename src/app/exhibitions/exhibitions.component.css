@@ -1,0 +1,121 @@
+.background-image {
+  background-image: url('./../../assets/exhibitions-assets/veertig-jaar-bimhuis/images/40-jaar-bimhuis-2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 40%;
+  height: 70vh;
+}
+
+.courses-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* .ingredients {
+  padding: 5px 0px 0px 7px;
+  font-size: .7rem;
+} */
+.pill-content {
+  /* border: 2px solid pink; */
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgb(89, 89, 89);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    0px 0px 5px 0px rgb(89, 89, 89);  /* Firefox 3.5 - 3.6 */
+  box-shadow:         0px 0px 5px 0px rgb(89, 89, 89);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  color: var(--text-color-orange);
+  background-color: var(--header-blue);
+  padding: 15px;
+  margin: 5px;
+  font-weight: 400;
+}
+a {
+  color: var(--text-color-orange);
+  text-transform: uppercase;
+}
+.exposition-title {
+  text-transform: uppercase;
+  margin: 0px 0px 5px 0px;
+}
+.artist-names-list {
+  margin: 0px;
+  padding: 0px;
+}
+.artist-names-list-item {
+  /* border: 1px solid red; */
+  margin: 0px;
+  padding: 0px;
+  text-align: right;
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  /* 
+    Device = Most of the Smartphones Mobiles (Portrait)
+    Screen = 320px to 479px
+  */
+  .courses-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  /* 
+    Device = Low Resolution Tablets, Mobiles (Landscape)
+    Screen = 481px to 767px
+  */
+  .courses-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  /* 
+    Device = Tablets, Ipads (portrait)
+    Screen = 768px to 1024px
+  */
+  .courses-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+  /* 
+  Device = Laptops, Desktops
+  Screen = 1025px to 1280px
+  */
+  .courses-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1281px) {
+
+  /* 
+  Device = Desktops
+  Screen = 1281px to higher resolution desktops
+  */
+  .courses-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,32 @@
+<section>
+  <div class="background-image">
+    <div class="banner">
+      <p class="banner-title">HET AMSTERDAMSCH LITTERAIR CAFE</p>
+      <div class="banner-content" fxLayout>
+        <!-- <img src="'./../../../assets/images/uithangbord3.svg" alt=""> -->
+        <div class="capital">D</div>
+        <div class="non-capital">E</div>
+        <div class="capital">E</div>
+        <div class="non-capital">NGELBEWAARDER</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-content" fxLayout="column" fxLayoutAlign="center center">
+
+    <div *ngIf="language === 'dutch'" class="openingstijden" fxLayout="column" fxLayoutAlign="center center">
+      <p class="tijden">Ons terras is iedere dag open van 12.00&nbsp;tot&nbsp;20.00</p>
+        <p class="reserveren">Het is niet mogelijk om op het terras te reserveren maar er is vast wel een plekje te
+          vinden. Hopelijk tot snel!
+        </p>
+    </div>
+
+    <div *ngIf="language === 'english'" class="openingstijden" fxLayout="column" fxLayoutAlign="center center">
+      <p class="tijden">Our terrace is opened daily from 12.00&nbsp;until&nbsp;20.00</p>
+        <p class="reserveren"> We are open for lunch from 12:00 until 17:00. Unfortunately it's not possible to make resevations for terras seats. Hope to see you soon!
+        </p>
+    </div>
+
+  </div>
+
+</section>

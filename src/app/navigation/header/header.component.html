@@ -1,0 +1,55 @@
+<section>
+<mat-toolbar fxLayout fxLayoutAlign="space-between">
+  <div class="toolbar-left" fxLayout fxLayoutAlign="center center">
+    <mat-icon fxHide.gt-sm class="menu-icon" (click)="onOpenSidenav()">menu</mat-icon>
+  </div>
+
+  <!-- <div class="spacer" fxFlex></div> -->
+
+  <div class="toolbar-right" fxLayout>
+
+    <div class="list-container" fxLayout fxLayoutAlign="center center" fxHide.lt-md>
+      <ul fxLayout fxLayoutGap="15px">
+        <li><a routerLinkActive="active-link" routerLink="/home">HOME</a></li>
+        <li *ngIf="language === 'english'"><a routerLinkActive="active-link" routerLink="/drinks">DRINKS</a></li>
+        <li *ngIf="language === 'dutch'"><a routerLinkActive="active-link" routerLink="/drinks">DRANKEN</a></li>
+        <li><a routerLinkActive="active-link" routerLink="/lunch">LUNCH</a></li>
+        <li *ngIf="language === 'english'"><a routerLinkActive="active-link" routerLink="/dinner">DINNER</a></li>
+        <li *ngIf="language === 'dutch'"><a routerLinkActive="active-link" routerLink="/dinner">DINER</a></li>
+        <li><a routerLinkActive="active-link" routerLink="/snacks">SNACKS</a></li>
+        <li *ngIf="language === 'dutch'"><a routerLinkActive="active-link" routerLink="/beers">BIEREN</a></li>
+        <li *ngIf="language === 'english'"><a routerLinkActive="active-link" routerLink="/beers">BEERS</a></li>
+        <li *ngIf="language === 'dutch'"><a routerLinkActive="active-link" routerLink="/exhibitions">EXPOSITIES</a></li>
+        <li *ngIf="language === 'english'"><a routerLinkActive="active-link" routerLink="/exhibitions">EXHIBITIONS</a></li>
+      </ul>
+    </div>
+    <div fxHide.gt-sm class="list-container" fxLayout fxLayoutAlign="center center">
+      <ul class="expositions-link-container">
+        <li class="expositions-link" *ngIf="isShowcaseActive && language === 'dutch'"><a routerLink="/exhibitions">EXPOSITIES</a></li>
+        <li class="expositions-link" *ngIf="isShowcaseActive && language === 'english'"><a routerLink="/exhibitions">EXHIBITIONS</a></li>
+      </ul>
+    </div>
+    
+
+    <!-- <ul fxLayout fxLayoutAlign="center center" class="flag-list">
+      <li class="flag-list-item"
+        (click)="selectedLanguage('english')">
+        <img
+          [ngClass]="{'selected-flag': language === 'english'}"
+          class="flag uk-flag" src="./../../../assets/images/uk-flag.png"
+          alt="EN">
+      </li>
+      <li class="flag-list-item"
+        (click)="selectedLanguage('dutch')">
+        <img
+          class="flag nl-flag"
+          src="./../../../assets/images/nl-flag.png"
+          alt=""
+          [ngClass]="{'selected-flag': language === 'dutch'}">
+      </li>
+    </ul> -->
+  </div>
+</mat-toolbar>
+<hr>
+
+</section>
