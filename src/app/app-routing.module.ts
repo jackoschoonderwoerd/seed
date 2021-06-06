@@ -11,15 +11,7 @@ const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'signup', component: SignupComponent },
-  { path: 'login', component: LoginComponent },
-  
-  
-  // { path: 'admin', loadChildren: () => import('./admin/admin.module')
-  //   .then(m => m.AdminModule)},
-  // { path: 'user', loadChildren: () => import('./user/user.module')
-  //   .then(m => m.UserModule)},
-  
-  
+  { path: 'login', component: LoginComponent },  
   { path: 'exhibitions', loadChildren: () => import('./exhibitions/exhibitions.module').then(m => m.ExhibitionsModule)},
   
   

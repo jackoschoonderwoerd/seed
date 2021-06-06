@@ -12,26 +12,10 @@
       <div class="list-container" fxLayout fxLayoutAlign="center center" fxHide.lt-md>
         <ul fxLayout fxLayoutGap="15px">
           <li><a routerLinkActive="active-link" routerLink="/home">HOME</a></li>
-          <li><a routerLinkActive="active-link" routerLink="/drinks">DRINKS</a></li>
-
-          <li><a routerLinkActive="active-link" routerLink="/lunch">LUNCH</a></li>
-          <li *ngIf="language === 'english'"><a routerLinkActive="active-link" routerLink="/dinner">DINNER</a></li>
-          <li *ngIf="language === 'dutch'"><a routerLinkActive="active-link" routerLink="/dinner">DINER</a></li>
-          <li><a routerLinkActive="active-link" routerLink="/snacks">SNACKS</a></li>
-          <li *ngIf="language === 'dutch'"><a routerLinkActive="active-link" routerLink="/beers">BIEREN</a></li>
-          <li *ngIf="language === 'english'"><a routerLinkActive="active-link" routerLink="/beers">BEERS</a></li>
-          <li *ngIf="language === 'dutch'"><a routerLinkActive="active-link" routerLink="/exhibitions">EXPOSITIES</a>
+          <li><a routerLinkActive="active-link" routerLink="/login">LOGIN</a></li>
+          <li><a routerLinkActive="active-link" routerLink="/signup">SIGNUP</a></li>
+          <li><a routerLinkActive="active-link" routerLink="/exhibitions">EXHIBITIONS</a>
           </li>
-          <li *ngIf="language === 'english'"><a routerLinkActive="active-link" routerLink="/exhibitions">EXHIBITIONS</a>
-          </li>
-        </ul>
-      </div>
-      <div fxHide.gt-sm class="list-container" fxLayout fxLayoutAlign="center center">
-        <ul class="expositions-link-container">
-          <li class="expositions-link" *ngIf="isShowcaseActive && language === 'dutch'"><a
-              routerLink="/exhibitions">EXPOSITIES</a></li>
-          <li class="expositions-link" *ngIf="isShowcaseActive && language === 'english'"><a
-              routerLink="/exhibitions">EXHIBITIONS</a></li>
         </ul>
       </div>
     </div>

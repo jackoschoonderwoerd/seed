@@ -25,7 +25,7 @@ import { SignupComponent } from './signup/signup.component';
   ],
   imports: [
     CommonModule,
-    AuthRoutingModule,
+    // AuthRoutingModule,
     ReactiveFormsModule,
     FlexLayoutModule,
     MaterialModule,
