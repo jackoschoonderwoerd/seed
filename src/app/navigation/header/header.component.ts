@@ -7,6 +7,7 @@ import { AuthService } from 'src/app/auth/auth.service';
 import * as fromRoot from './../../app.reducer';
 import * as UI from './../../shared/ui.actions';
 import * as EXPOSITION from '../../exhibitions/exhibitions.actions'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 @Component({
   selector: 'app-header',
@@ -21,6 +22,7 @@ export class HeaderComponent implements OnInit {
   language: string = 'dutch';
   expositionId: string;
   isShowcaseActive: boolean = false;
+  faBars = faBars
 
   constructor(
     private store: Store<fromRoot.GlobalState>,

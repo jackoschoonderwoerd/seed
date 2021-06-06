@@ -1,75 +1,10 @@
-<section>
-  <div class="top-footer">
-    <div class="footer-section">
-      <p class="footer-section-title">
-        Contact
-      </p>
-      <p class="footer-section-content">
-        Café de Seed<br>
-        Kloveniersburgwal 59 HS<br>
-        1011 JZ Amsterdam<br>
-        020.625.37.72
-      </p>
-    </div>
 
-    <span *ngIf="language === 'dutch'">
-      <div class="footer-section">
-        <p class="footer-section-title">
-          Openingstijden
-        </p>
-        <p class="footer-section-content">
-          Op dit moment is het terras iedere dag geopend van {{openingHours.openingHours}}.<br>
-          De openingstijden zullen worden aangepast in overeenstemming met het huidige regeringsbeleid.
-        </p>
-      </div>
-    </span>
-
-    <span *ngIf="language === 'english'">
-      <div class="footer-section">
-        <p class="footer-section-title">
-          Opening Hours
-        </p>
-        <p class="footer-section-content">
-          Currently our terrace is opened daily from 12:00 until 20.00. <br>
-          The hours and availability of our facilities will be adjusted in accordance with the current government
-          policy.
-        </p>
-      </div>
-    </span>
-
-    <span *ngIf="language === 'dutch'">
-      <div class="footer-section">
-        <p class="footer-section-title">
-          Jazz op zondag
-        </p>
-        <p class="footer-section-content">
-          Jazz engel jamt normaliter elke zondag tussen 
-          <span style="white-space:nowrap">16:30 – 19:00</span>.<br>
-          IVM Corona tijdelijk GEEN jazz engel.<br>
-          Ga naar de website van
-          <a href="http://www.jazzengel.nl" rel="noopener" class="jazz-engel-link" target="_blank">JAZZENGEL</a>
-          voor meer informatie en het programma.
-        </p>
-      </div>
-    </span>
-
-    <span *ngIf="language === 'english'">
-      <div class="footer-section">
-        <p class="footer-section-title">
-          Jazz on Sundays
-        </p>
-        <p class="footer-section-content">
-          Every sunday there's is a jazz-jamm session between <span style="white-space:nowrap">16:30 – 19:00</span>.<br>
-          Due to corona restrictions, the sessions are temporarily suspended.<br>
-          For the latest information about the progam, check out <a href="www.jazzengel.nl">Jazzengel</a>
-        </p>
-      </div>
-    </span>
-
-  </div>
-  <div class="bottom-footer" fxLayout fxLayoutAlign="center">
-    <p class="bottom-footer-content">
+  <div
+    class="footer-container"
+    fxLayout="column" 
+    fxLayoutAlign="center center">
+    <div class="">
       &copy; De Seed 2020.
-    </p>
+    </div>
   </div>
-</section>
+

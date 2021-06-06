@@ -35,7 +35,6 @@ import { MaterialModule } from './material.module';
     HomeComponent,
     HeaderComponent,
     SidenavComponent,
-    
     FooterComponent,
     
   ],
@@ -53,7 +52,7 @@ import { MaterialModule } from './material.module';
     HttpClientModule,
     FontAwesomeModule,
     NgbModule
-    // FoodModule
+    
     
     
     
