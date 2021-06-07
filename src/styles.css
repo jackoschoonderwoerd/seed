@@ -17,7 +17,6 @@ body {
     height: 100% }
 
 a {
-  font-family: Roboto, "Helvetica Neue", sans-serif;
   text-decoration: none;
 }
 ul {
@@ -30,4 +29,5 @@ ul {
   --color-2: white;
   --background-color-3: lightblue;
   --color-3: green;
+  --app-footer-height: 50px;
 }

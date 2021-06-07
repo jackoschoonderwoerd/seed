@@ -7,11 +7,10 @@ mat-sidenav-container, mat-sidenav-content, mat-sidenav {
 
 mat-sidenav {
   background-color: white;
-}
-
-mat-sidenav {
   width: 80vw;
 }
+
+
 
 app-header {
   background-color: var(--background-color-2);
@@ -22,10 +21,9 @@ app-header {
 }
 
 main{
-  padding: 56px 0px 50px 0px;
+  padding: 56px 0px var(--app-footer-height) 0px;
   background-color: var(--background-color-3);
   color: var(--color-3);
-  
 }
 
 
@@ -37,7 +35,7 @@ app-footer {
 
   background-color: var(--background-color-2);
   color: var(--color-2);
-  height: 50px
+  height: var(--app-footer-height)
 }
 
 
